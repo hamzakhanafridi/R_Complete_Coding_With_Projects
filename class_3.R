@@ -71,3 +71,24 @@ repeat{
 v <- c(20,30,40,50)
 v <- v - 10    # This is simple method to skip loops for doing -10 from all numbers
 v
+
+
+
+
+#FUNCTIONS (is named, reusable block of code that perform some specific task)... think of it like a recipe: it takes ingredients(inputs called arguments) follow a set of instructions(code inside function body),and produce a result (the return value)
+#default function is (print, paste etc)
+cal_bmi <-  function (weight_kg, height_m){
+  bmi <-weight_kg/(height_m^2)
+  return (bmi)
+}
+cal_bmi(85,1.55)
+# function can only return(ouptut) only one R object(it can be single number, vector, matrix, dataframe etc)
+
+
+# **    variable scope (jo inside honge function me osko ham bahar acess nahi kar sakte)    **
+
+#x <- 10 # global variable
+#my_fun <- fucniton (){
+#  x <- 10 # local variable
+#  y <- 5 # local var
+#}
